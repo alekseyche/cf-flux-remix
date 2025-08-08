@@ -4,7 +4,7 @@ import { createAppContext } from "../context";
 import { handleError } from "../utils/error";
 import { withAuth } from "../middleware/auth";
 import { withCors } from "../middleware/cors";
-
+ 
 export const loader: LoaderFunction = () => {
   return json({ error: "此 API 端点仅支持 POST 请求" }, { status: 405 });
 };
